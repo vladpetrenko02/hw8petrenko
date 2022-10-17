@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #C4C4C4;
+}
+
+.outer-container-frst{
+    width: 1000px;
+    background-color: #E6E6E6;
+}
+
+.inner-container{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    background-color: #FC8F8F;
+    font-size: 64px;
+}
+
+.inner-container p{
+    margin: 0;
+    padding: 63px 0 0 0;
+}
+
+.frst-one{
+    float: left;
+}
+
+.frst-two{
+    float: right;
+}
+
+.outer-container-frst::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.outer-container-scnd{
+    width: 1000px;
+    background-color: #E6E6E6;
+    margin: 50px 0 0 0;
+}
+
+.outer-container-scnd > div:first-child{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    background-color: #FC8F8F;
+    font-size: 64px;
+    float: left;
+}
+
+.inner-container-scnd > div{
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    background-color: #FC8F8F;
+    float: left;
+    margin: 0 0 0 15px;
+}
+
+.inner-container-scnd > div p{
+    margin: 0;
+    padding: 31px 0 0 0;
+}
+
+.inner-container-scnd{
+    float: right;
+}
+
+.outer-container-scnd::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.outer-container-thrd{
+    width: 1000px;
+    background-color: #E6E6E6;
+    margin: 50px 0 0 0;
+}
+
+.inner-container-thrd-one div,
+.inner-container-thrd-two div{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    background-color: #FC8F8F;
+    font-size: 64px;
+    float: left;
+}
+
+.outer-container-thrd p{
+    margin: 0;
+    padding: 63px 0 0 0;
+}
+
+.inner-container-thrd-one{
+    float: left;
+}
+
+.inner-container-thrd-two{
+    float: right;
+}
+
+.inner-container-thrd-one div{
+    margin: 0 15px 0 0;
+}
+
+.inner-container-thrd-two div{
+    margin: 0 0 0 15px;
+}
+
+.outer-container-thrd::after{
+    content: '';
+    display: block;
+    clear: both;
+}
